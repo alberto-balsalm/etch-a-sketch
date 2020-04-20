@@ -1,9 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     text-align: center;
-
+    text-transform: uppercase;
 }
 
 .grid {
+    clear: right;
     display: flex;
     flex-wrap: wrap;
     width: 640px;
@@ -13,17 +18,27 @@ h1 {
 }
 
 .square {
-    //border: 1px solid darkslategray; 
     box-sizing: border-box;
-    opacity: 0.1;
-       
+    opacity: 0.1;       
 }
 
 .controls {
     text-align: center;
+    font-size: 0;
 }
 
-button {
-    
+.newGridButton {
+    width: 648px;
+    margin-bottom: 8px;
 }
 
+button {  
+    border: none;
+    padding: 0.6rem 1.2rem;     
+    margin: 4px;
+    width: 320px;
+}
+
+.buttonSelected {
+    background-color: #c0c0c0;
+}
